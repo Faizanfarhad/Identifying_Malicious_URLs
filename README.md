@@ -14,12 +14,13 @@ A machine-learning based Python project to detect whether a given URL is malicio
 
 
 # 📂 Repository Structure
+```bash
 ├── .vscode/                     # VS Code configuration
 ├── saved Model/                # Pre-trained ML model
 ├── src/                       # Source code (data processing & model logic)
 ├── prediction.py              # Main script for URL prediction
 └── README.md                  # This file
-
+```
 # 🚀 Quick Start
 1) Clone the Repository
 ```bash
