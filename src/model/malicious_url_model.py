@@ -43,6 +43,7 @@ def model():
     model.add(layers.Dense(576,activation='relu'))
     model.add(layers.Dense(4,activation='softmax'))
     return model
+
 def pretrained_models(vgg16):
     conv_base = models.Sequential()
     conv_base.add(vgg16)
@@ -51,6 +52,7 @@ def pretrained_models(vgg16):
     conv_base.add(layers.Dense(4,activation='softmax'))
     return conv_base
 # conv_model = model()
+
 pretrained_model = VGG16(weights='imagenet',
                 include_top=False,
                 input_shape=(32,32,3))

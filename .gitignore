@@ -1,3 +1,5 @@
 .vscode
 src/Dataset
+__pycache__/
+
 
