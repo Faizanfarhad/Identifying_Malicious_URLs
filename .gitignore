@@ -1,5 +1,6 @@
 .vscode
-src/Dataset
 __pycache__/
 
-
+src/Dataset
+src/model/data_checker.ipynb
+model_test.ipynb

@@ -1,38 +1,61 @@
-# 🛡️ Identifying Malicious URLs
+# Identifying Malicious URLs
 
-A machine-learning based Python project to detect whether a given URL is malicious or benign. This system processes URLs, uses a trained model, and predicts if the URL could be harmful — helping enhance cybersecurity by identifying phishing, malware, or other unsafe web addresses.
+## Info
 
-# 📌 Features
+This project uses deep learning to classify a URL as malicious or benign. It includes URL encoding code, training notebooks, a saved Keras model, and a simple prediction script.
 
-* 🔍 URL Classification — Classifies URLs as malicious or benign using a trained model
+## About
 
-* 🧠 Machine Learning Model — Pre-trained model included for prediction
+The project converts URL text into a fixed-size numeric representation and feeds it to a trained model for classification. The repository also includes the dataset and notebooks used for training and visualization.
 
-* 🪄 Prediction Script — Easy script to input new URLs and get results
-
-* 📁 Modular Code Structure — Organized into source and support files
-
-
-# 📂 Repository Structure
-```bash
-├── .vscode/                     # VS Code configuration
-├── saved Model/                # Pre-trained ML model
-├── src/                       # Source code (data processing & model logic)
-├── prediction.py              # Main script for URL prediction
-└── README.md                  # This file
-```
-# 🚀 Quick Start
-1) Clone the Repository
-```bash
-  git clone https://github.com/Faizanfarhad/Identifying_Malicious_URLs.git
-  cd Identifying_Malicious_URLs
-```
-
-# 2) Install Requirements
-
-Make sure you have Python 3.x installed.
-Then install needed libraries:
+## Project Structure
 
 ```bash
-    pip install -r requirements.txt
+Identifying_Malicious_URLs/
+├── prediction.py
+├── requirements.txt
+├── saved Model/
+│   └── malicious_url_checker_model.keras
+└── src/
+|    ├── Dataset/
+|    │   └── malicious_phish.csv
+|    ├── encoding/
+|    │   └── unicode_encoding.py
+|    ├── model/
+|    │   └── malicious_url_model1.ipynb
+|    └── visualization/
+|        └── data_visulization.ipynb
+|
+|____ app.py
 ```
+
+## How To Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Faizanfarhad/Identifying_Malicious_URLs.git
+cd Identifying_Malicious_URLs
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open `prediction.py` and update the URL in this line:
+
+```python
+url = ['"g00gle.com"']
+```
+
+4. Run the prediction script:
+
+```bash
+python prediction.py
+```
+
+## Model Accuracy
+
+0.9505 
