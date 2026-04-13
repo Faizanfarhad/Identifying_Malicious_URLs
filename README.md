@@ -43,19 +43,3 @@ cd Identifying_Malicious_URLs
 ```bash
 pip install -r requirements.txt
 ```
-
-3. Open `prediction.py` and update the URL in this line:
-
-```python
-url = ['"g00gle.com"']
-```
-
-4. Run the prediction script:
-
-```bash
-python prediction.py
-```
-
-## Model Accuracy
-
-0.9505 
